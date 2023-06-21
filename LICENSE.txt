@@ -1,0 +1,65 @@
+ nomor  #NO_Lp
+ nama_laporan #Jenis_ppgk
+ tanggal #Waktu
+ berita_acara #Motif
+ tkp #Lokasi #Alamat
+ pelaku #Terlapor
+ korban #Korban
+ kronologi & rekonstruksi #Kerugian
+ Polsek #
+ saksi #Pelapor
+ jam
+ jenis_kelamin
+ 
+ 
+ 
+echo '<td class="text-center">'. $data['No_Lp'] .'</td>';
+echo '<td class="text-center">'. $data['Polsek'] .'</td>';
+echo '<td class="text-center">'. $data['Jenis_ppgk'].'</td>';
+echo '<td class="text-center">'. $data['Waktu'].'</td>';
+echo '<td class="text-center">'. $data['Pelapor'] .'</td>';
+echo '<td class="text-center">'. $data['Korban'] .'</td>';
+echo '<td class="text-center">'. $data['Alamat'] .'</td>';
+echo '<td class="text-center">'. $data['Terlapor'] .'</td>';
+echo '<td class="text-center">'. $data['Lokasi'] .'</td>';
+echo '<td class="text-center">'. $data['Motif'] .'</td>';
+echo '<td class="text-center">'. $data['Kerugian'] .'</td>';
+ 
+$sql="INSERT INTO kamtibmas_umum(id_user,No_Lp,Polsek,Jenis_ppgk,Waktu,Pelapor,Korban,Alamat,Terlapor,Lokasi,Motif,Kerugian)
+ VALUES('$id_user','$No_Lp','$Polsek','$Jenis_ppgk','$Waktu','$Pelapor','$Korban','$Alamat','$Terlapor','$Lokasi','$Motif','$Kerugian')";
+
+
+
+ => FREE HTML TEMPLATE LICENSE BY HTML Codex
+
+ All free HTML templates by HTML Codex are licensed under a Creative Commons Attribution 4.0 International License which means you are not allowed to remove the author’s credit link/attribution link/backlink.
+
+ When you download or use our free HTML templates, it will attribute the following conditions.
+
+
+ => YOU ARE ALLOWED
+
+      1. You are allowed to use for your personal and commercial purposes.
+
+      2. You are allowed to modify/customize however you like.
+
+      3. You are allowed to convert/port for use for any CMS.
+
+      4. You are allowed to share/distribute under the HTML Codex brand name.
+
+      5. You are allowed to put a screenshot or a link on your blog posts or any other websites.
+
+
+ => YOU ARE NOT ALLOWED
+
+      1. You are not allowed to remove the author’s credit link/attribution link/backlink without purchasing Credit Removal License ( https://htmlcodex.com/credit-removal ).
+
+      2. You are not allowed to sell, resale, rent, lease, license, or sub-license.
+
+      3. You are not allowed to upload on your template websites or template collection websites or any other third party websites without our permission.
+
+ This license can be terminated if you breach any of these conditions.
+
+ Please contact us (https://htmlcodex.com/contact) if you have any query.
+
+ => PURCHASE CREDIT REMOVAL LICENSE ( https://htmlcodex.com/credit-removal )

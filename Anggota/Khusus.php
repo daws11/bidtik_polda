@@ -1,0 +1,107 @@
+<?php
+	include("sess_check.php");
+	require_once"../fungsiIO.php";
+	// deskripsi halaman
+	$pagedesc = "Data KAMTIBMAS KHUSUS";
+	include("layout_top.php");
+	include("dist/function/format_tanggal.php");
+	include("dist/function/format_rupiah.php");
+	
+
+?>
+<!-- top of file -->
+		<!-- Page Content -->
+		<div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header"><?php echo ucwords($_SESSION["nama_user"]);?> <sub><i>DATA KAMTIBMAS KHUSUS</i></sub></h1>
+                    </div><!-- /.col-lg-12 -->
+                </div><!-- /.row -->
+				
+				<div class="row">
+					<div class="col-lg-12"><?php include("layout_alert.php"); ?></div>
+				</div>
+				
+				<div class="row">
+	
+					<div class="panel-body">
+								
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#examplec').DataTable();
+} );
+</script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+		<table id="examplec" class="display" style="width:100%">			
+									<thead>
+										<tr>
+											<th width="1%">No</th>
+											<th width="1%">No LP</th>
+											<th width="5%">Kategori</th>
+											<th width="10%">Waktu</th>
+											<th width="5%">Pelapor</th>
+											<th width="5%">Korban</th> 
+											<th width="10%">Terlapor</th>
+											<th width="10%">Lokasi</th> 
+											<th width="10%">Kerugian</th>
+											
+										</tr>
+									</thead>
+									<tbody>
+										<?php
+											$i = 1;
+											//$sql = "SELECT kamtibmas_khusus.*, employee.* FROM kamtibmas_khusus, employee WHERE kamtibmas_khusus.id_user=employee.id_user AND 
+										//kamtibmas_khusus.id_user='$id' ORDER BY kamtibmas_khusus.id_user ASC";
+											
+	$sql = "SELECT * from kamtibmas_khusus   order by Waktu asc";										
+											$ress = mysqli_query($conn, $sql);
+											while($data = mysqli_fetch_array($ress)) {
+												$wkt= $data['Waktu'];
+												$arw=explode(" ",$wkt);
+												$tgl=TGLL($arw[0]);
+												$jam=$arw[1];
+												$waktu="$tgl $jam Wib";
+												echo '<tr>';
+												echo '<td class="text-center">'. $i .'</td>';
+												echo '<td class="text-center"><label title="'.$data['Motif'].'">'. $data['No_Lp'] .'</label></td>';
+							
+												echo '<td class="text-center">'. $data['Jenis_ppgk'].'</td>';
+												echo '<td class="text-center">'.$waktu.'</td>';
+												echo '<td class="text-center">'. $data['Pelapor'] .'</td>';
+												echo '<td class="text-center">'. $data['Korban'] .'</td>'; 
+												echo '<td class="text-center">'. $data['Terlapor'] .'</td>';
+												echo '<td class="text-center"><small>'. $data['Lokasi'] .'</small></td>'; 
+												echo '<td class="text-center"><small>'. $data['Kerugian'] .'</small></td>';
+												?>
+													  
+												<?php
+													  echo '</td>';
+												echo '</tr>';												
+												$i++;
+											}
+										?>
+									</tbody>
+								</table>
+							</div>
+			<!-- Large modal -->
+			<div class="modal fade bs-example-modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-body">
+							<p>One fine body…</p>
+						</div>
+					</div>
+				</div>
+			</div>    
+						</div><!-- /.panel -->
+					</div><!-- /.col-lg-12 -->
+				</div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div><!-- /#page-wrapper -->
+<!-- bottom of file -->
+<?php
+	include("layout_bottom.php");
+?>
