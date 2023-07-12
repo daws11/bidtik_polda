@@ -56,7 +56,7 @@
                                             <option value="Polres">Polres</option>
                                             <option value="Satker">Satker</option>
                                             <option value="Anggota">Anggota Bid TIK</option>
-                                            <!--<option value="Atasan">KABID/KADIT/KARO</option>-->
+                                            <option value="Atasan">KABID/KADIT/KARO</option>
                                             </select>
                                         </div>
                                         <div class="form-group">

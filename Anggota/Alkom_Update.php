@@ -35,7 +35,7 @@
 				header("location: Alkom.php?act=update&msg=success");
 			}else{
 				$sql = "UPDATE tabel_alkom SET
-			id_user='". $id_user."',
+				id_user='". $id_user."',
 				Nama='". $Nama ."',
 				Pangkat='". $Pangkat ."',
 				Jabatan='". $Jabatan ."',
