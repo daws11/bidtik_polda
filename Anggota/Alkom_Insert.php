@@ -31,4 +31,6 @@ if($rowscek<1){
 }else{
 	header("location: Alkom_Tambah.php?act=add&msg=double");	
 }
+//ewean
 ?>
+ 
