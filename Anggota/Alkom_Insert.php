@@ -6,6 +6,7 @@ $id_user=$_POST['id_user'];
 $Nama=$_POST['Nama'];
 $Pangkat=$_POST['Pangkat'];
 $Jabatan=$_POST['Jabatan'];
+
 $telp=$_POST['telp'];
 $id_radio=$_POST['id_radio'];
 $serial_number=$_POST['serial_number'];
