@@ -23,7 +23,15 @@ $akhir=date("dd/mm/yyyy");
 						</div></h1>
                     </div><!-- /.col-lg-12 -->
                 </div><!-- /.row -->
-				
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<a href="tambah_laporan.php" class="btn btn-success">Tambah</a>
+							</div>
+						</div>
+					</div>
+					<div class="panel-body">
 				<div class="row">
 					<div class="col-lg-12"><?php include("layout_alert.php"); ?></div>
 				</div>
