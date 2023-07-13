@@ -1,233 +1,79 @@
 
-<html lang="en">
+<?php $pagedesc = "Login"; ?>
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>BID TIK Polda Metro Jaya</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
-    <link href="img/favicon.ico" rel="icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Gambar/tik-polri.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <title>BID TIK POLDA METRO JAYA</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://kolabjar-asnpintar.lan.go.id/public/css/bootstrap4/bootstrap.min.css" rel="stylesheet">
+    <link href="https://kolabjar-asnpintar.lan.go.id/public/portal/css/portal.css" rel="stylesheet">
+    <link href="https://kolabjar-asnpintar.lan.go.id/public/css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300" rel="stylesheet">
+    <link href="https://kolabjar-asnpintar.lan.go.id/public/portal/css/pe-icon-7-stroke.css" rel="stylesheet">
+    <link href="https://kolabjar-asnpintar.lan.go.id/public/portal/css/jquery-ui.min.css" rel="stylesheet">
+    <link href="https://kolabjar-asnpintar.lan.go.id/public/portal/css/jquery-ui.structure.min.css" rel="stylesheet">
+    <link href="https://kolabjar-asnpintar.lan.go.id/public/portal/css/jquery-ui.theme.min.css" rel="stylesheet">
+    <link href="https://kolabjar-asnpintar.lan.go.id/public/adminlte/css/select2.min.css" rel="stylesheet">
+    <link href="https://kolabjar-asnpintar.lan.go.id/public/css/aos.css" rel="stylesheet">
+    <link href="https://kolabjar-asnpintar.lan.go.id/public/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://kolabjar-asnpintar.lan.go.id/public/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://kolabjar-asnpintar.lan.go.id/public/portal/css/login.css">
 </head>
 
-<body>
-    <!-- Header Start -->
-    <div class="container-fluid bg-dark px-0">
-        <div class="row gx-0">
-            <div class="col-lg-3 bg-dark
-             d-none d-lg-block">
-                <a href="#" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                    <!--<h1 class="m-0 display-4 text-primary text-uppercase">BID TIK</h1>-->
-                    <img src="img/BID-TIK.png" style="width: 100px" height="110px">
-                </a>
-            </div>
-            <div class="col-lg-9">
-                <div class="row gx-0 bg-secondary d-none d-lg-flex">
-                    <div class="col-lg-7 px-5 text-start">
-                        <div class="h-100 d-inline-flex align-items-center py-2 me-4">
-                            <i class="fa fa-envelope text-primary me-2"></i>
-                            <h6 class="mb-0">trianapanji@gmail.com</h6>
-                        </div>
-                        <div class="h-100 d-inline-flex align-items-center py-2">
-                            <i class="fa fa-phone-alt text-primary me-2"></i>
-                            <h6 class="mb-0">+62 859 7253 9666</h6>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 px-5 text-end">
-                        <div class="d-inline-flex align-items-center py-2">
-                            <a class="btn btn-light btn-square rounded-circle me-2" href="">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a class="btn btn-light btn-square rounded-circle me-2" href="https://twitter.com/tikjaya">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a class="btn btn-light btn-square rounded-circle me-2" href="">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a class="btn btn-light btn-square rounded-circle me-2" href="https://www.instagram.com/bidtik.pmj/?hl=id">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a class="btn btn-light btn-square rounded-circle" href="">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
+<body class="landing-page landing-page1" style="background: url(&quot;https://kolabjar-asnpintar.lan.go.id/public/img/bg-login.jpg&quot;) center center / cover; backdrop-filter: blur(5px) brightness(0.5);" data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
+    <div class="">
+        <div class="d-flex  ">
+        <div class="container d-flex justify-content-center">
+            <div class="login d-flex bg-white box-shadow-1 col-md-10 no-padding" style="background-color: rgba(0,0,0,.5)">
+                <div class="col-md-6 d-md-block d-none no-padding no-overflow mx-auto d-block">
+                <center><img src="Gambar/Picture1.png" width="300" height="380" style="margin: 0 0 0px"></center>
                 </div>
-                <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0 px-lg-5">
-                    <a href="index.html" class="navbar-brand d-block d-lg-none">
-                        <h1 class="m-0 display-4 text-primary text-uppercase">BID TIK</h1>
+                <div class="col-md-6 position-relative">
+                    <div class="d-block back-button-cust ">
+                    <a href="index.php"><img src="Gambar/back.png" width="20" height="30" style="margin right: 0 0 50px">
                     </a>
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link active">Beranda</a>
-                            <a href="about.php" class="nav-item nav-link">Tentang</a>
-                            <a href="class.html" class="nav-item nav-link">Giat Harian</a>
-                            <a href="dash.php" class="nav-item nav-link">Kamtibmas</a>
-                        </div>
-                        <a href="login.html" class="btn btn-primary py-md-2 px-md-5 d-none d-lg-block">Login</a>
                     </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <!-- Header End -->
+                    <div class="panel panel-default animate fadeIn login-form pl-md-0 pl-sm-5 pr-5 pt-5 pb-3">
+                        <div class="panel-heading text-center animate fadeIn input-one custom-margin-bottom">
+                            Silahkan Login</div>
+                                <div class="panel-body">
+                                    <form action="login_auth.php" method="post">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="username" placeholder="Username" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" name="akses" required>
+                                            <option value="">======= Login Sebagai =======</option>
+                                            <option value="Admin">Admin</option>
+                                            <option value="Polres">Polres</option>
+                                            <option value="Satker">Satker</option>
+                                            <option value="Anggota">Anggota Bid TIK</option>
+                                            <!-- <option value="Atasan">KABID/KADIT/KARO</option> -->
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" class="btn btn-success btn-block" name="login" value="Login">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    
+    <!-- footer-bottom -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 
-
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5">
-        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/BACKGROUND-1.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase">BID TIK</h5>
-                            <h1 class="display-2 text-white text-uppercase mb-md-4">MENGABDI DENGAN INTEGRASI MELAYANI DENGAN TEKNOLOGI</h1>
-                            <a href="login.html" class="btn btn-primary py-md-3 px-md-5 me-3">Login</a>
-                            <a href="about.html" class="btn btn-light py-md-3 px-md-5">Tentang BID TIK</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/BACKGROUND.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase">BID TIK</h5>
-                            <h1 class="display-2 text-white text-uppercase mb-md-4">MENGABDI DENGAN INTEGRASI MELAYANI DENGAN TEKNOLOGI</h1>
-                            <a href="login.html" class="btn btn-primary py-md-3 px-md-5 me-3">Login</a>
-                            <a href="about.html" class="btn btn-light py-md-3 px-md-5">Tentang BID TIK</a>
-                        </div>
-                    </div>
-            </div>
-            <div class="carousel-item">
-                    <img class="w-100" src="img/BACKGROUND-2.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase">BID TIK</h5>
-                            <h1 class="display-2 text-white text-uppercase mb-md-4">MENGABDI DENGAN INTEGRASI MELAYANI DENGAN TEKNOLOGI</h1>
-                            <a href="login.html" class="btn btn-primary py-md-3 px-md-5 me-3">Login</a>
-                            <a href="about.html" class="btn btn-light py-md-3 px-md-5">Tentang BID TIK</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-secondary px-5 mt-5">
-        <div class="row gx-5">
-            <div class="col-lg-8 col-md-6">
-                <div class="row gx-5">
-                    <div class="col-lg-4 col-md-12 pt-5 mb-5">
-                        <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
-                        <div class="d-flex mb-2">
-                            <i class="bi bi-geo-alt text-primary me-2"></i>
-                            <p class="mb-0">Jl. Jenderal Sudirman Kav. 55 Jakarta Selatan, Kota Jakarta Selatan, DKI Jakarta</p>
-                        </div>
-                        <div class="d-flex mb-2">
-                            <i class="bi bi-envelope-open text-primary me-2"></i>
-                            <p class="mb-0">xxxx@gmail.com</p>
-                        </div>
-                        <div class="d-flex mb-2">
-                            <i class="bi bi-telephone text-primary me-2"></i>
-                            <p class="mb-0">+62 859 xxxx xxxx</p>
-                        </div>
-                        <div class="d-flex mt-4">
-                            <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-primary btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                        <h4 class="text-uppercase text-light mb-4">Quick Links</h4>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Beranda</a>
-                            <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Tentang</a>
-                            <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Giat Harian</a>
-                            <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Kamtibmas</a>
-                            <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Hubungi Kami</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                        <h4 class="text-uppercase text-light mb-4">Popular Links</h4>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-secondary mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Beranda</a>
-                            <a class="text-secondary mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Tentang</a>
-                            <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Giat Harian</a>
-                            <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Kamtibmas</a>
-                            <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Hubungi Kami</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-5">
-                    <h4 class="text-uppercase text-white mb-4">Newsletter</h4>
-                    <h6 class="text-uppercase text-white">Subscribe Our Newsletter</h6>
-                    <p class="text-light">Enter your email right now</p>
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                            <button class="btn btn-dark">Sign Up</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid py-4 py-lg-0 px-5" style="background: #111111;">
-        <div class="row gx-5">
-            <div class="col-lg-8">
-                <div class="py-lg-4 text-center">
-                    <p class="text-secondary mb-0">&copy; <a class="text-light fw-bold" href="#">www.papahtampan.com</a>. All Rights Reserved.</p>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="py-lg-4 text-center credit">
-                    <p class="text-light mb-0">Designed by <a class="text-light fw-bold" href="https://papahtampan.com">PAPAH Tampan</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-dark py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
 </body>
-
 </html>
